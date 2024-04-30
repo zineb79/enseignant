@@ -315,7 +315,7 @@ th{
       .cont{
         background: url(pexels-felix-kiss-18684136.jpg);
         overflow-x: hidden;
-        height: 59%;
+        height: 100%;
         width: 40%;
         position:absolute;
         z-index: 1;
