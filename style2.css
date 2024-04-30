@@ -366,15 +366,73 @@ th{
           display: inline;
         }
       
-    /*----------------Home--------------*/
-     /*slide image*/
-.slideshow-container {
-  max-width: 500px;
+         /*----------------HOME--------------*/
+.row2 {
+  margin: 10px -16px;
+}
+.row2,
+.row2  .column {
+  padding: 8px;
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  display: none;
+}
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.content {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+}
+.show {
+  display: block;
+}
+.btn2 {
+  border-radius: 10%;
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.btn2:hover {
+  background-color: #ddd;
+}
+
+.btn2.active {
+  background-color: #137933de;
+  border: #137933de solid;
+  color: white;
+}
+
+.content img{
+  width: 40px;
+  height: auto;
+  border-radius: 100%;
+  border: 3px solid #141212;
+}
+/* Slideshow */
+.mySlides {
+  display: none;
+  margin: 20px;
+  width: 30%;
+}
+.mySlides img {
+  vertical-align: middle;
+  margin-left: 110%;
+}
+.slideshow-containe {
   position: relative;
   margin: auto;
 }
-
-/* The dots/bullets/indicators */
 .dot {
   height: 15px;
   width: 15px;
@@ -384,12 +442,9 @@ th{
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
 .active {
   background-color: #717171;
 }
-
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -400,12 +455,10 @@ th{
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
-
-    
+     
       /*----------------footer--------------*/
 .wrapper {
   display: inline-flex;
